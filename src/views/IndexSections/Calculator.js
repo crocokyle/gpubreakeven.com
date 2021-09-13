@@ -9,6 +9,7 @@ import {
   Container,
   Row,
   Col,
+  CustomInput,
   Card,
   CardHeader,
   CardBody,
@@ -65,6 +66,23 @@ export default function Calculator() {
             </Nav>
             </CardHeader>
             <CardBody>
+            <Row>
+                <Col>
+                    <CustomInput type="switch" id="switch-1" label="Electricity Cost" />
+                </Col>
+                <Col>
+                    <CustomInput type="switch" id="switch-2" label="Sales Tax" />
+                </Col>
+                <Col>
+                    <CustomInput type="switch" id="switch-3" label="Difficulty Prediction" />
+                </Col>
+                <Col>
+                    <CustomInput type="switch" id="switch-4" label="Coin Appreciation" />
+                </Col>
+                <Col>
+                    <CustomInput type="switch" id="switch-5" label="DAG Size Expiration" />
+                </Col>
+            </Row>
             <TabContent className="tab-space" activeTab={"link" + iconTabs}>
                 <TabPane tabId="link1">
                 <p>
