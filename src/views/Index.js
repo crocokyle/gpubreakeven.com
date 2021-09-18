@@ -52,7 +52,7 @@ export default function Index() {
       <div className="wrapper">
         <p>&nbsp;</p>
         <div className="main">
-        <Calculator />
+          <Calculator />
           <Basics />
           <Navbars />
           <Tabs />

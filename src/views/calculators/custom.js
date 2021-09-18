@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 // plugin that creates slider
 import Slider from "nouislider";
-import CustomRow from "views/calculators/CustomRow.js";
+import CustomRow from "components/calculators/CustomRow.js";
 
 // reactstrap components
 import {
