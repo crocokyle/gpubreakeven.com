@@ -35,13 +35,13 @@ export default function CustomRow() {
   const [inputFocus, setInputFocus] = React.useState(false);
   return (
     <Container id="menu-dropdown">
-        <Card className="bg-default" id="calc-row">
+        <Card className={css.inputcard} id="calc-row">
             <Row className={css.inputrow}>
                 <Col className={css.inputcolumn}>
                     <InputGroup className={css.inputgroup}>
                         <Input placeholder="Graphics Card Name" type="text" />
                         <InputGroupAddon addonType="append">
-                        <InputGroupText>
+                        <InputGroupText className={css.iconcontainer}>
                             <i className="tim-icons icon-components" />
                         </InputGroupText>
                         </InputGroupAddon>
@@ -51,7 +51,7 @@ export default function CustomRow() {
                     <InputGroup className={css.inputgroup}>
                         <Input placeholder="Purchase Price" type="text" />
                         <InputGroupAddon addonType="append">
-                        <InputGroupText>
+                        <InputGroupText className={css.iconcontainer}>
                             <i className="tim-icons icon-cart" />
                         </InputGroupText>
                         </InputGroupAddon>
@@ -61,7 +61,7 @@ export default function CustomRow() {
                     <InputGroup className={css.inputgroup}>
                         <Input placeholder="Hashrate (MH/s)" type="number" />
                         <InputGroupAddon addonType="append">
-                        <InputGroupText>
+                        <InputGroupText className={css.iconcontainer}>
                             <i className="tim-icons icon-sound-wave" />
                         </InputGroupText>
                         </InputGroupAddon>
@@ -69,9 +69,9 @@ export default function CustomRow() {
                 </Col>
                 <Col className={css.inputcolumn}>
                     <InputGroup className={css.inputgroup}>
-                        <Input placeholder="$/day" type="number" />
+                        <Input placeholder="$/day" type="number" disabled/>
                         <InputGroupAddon addonType="append">
-                        <InputGroupText>
+                        <InputGroupText className={css.iconcontainer}>
                             <i className="tim-icons icon-coins" />
                         </InputGroupText>
                         </InputGroupAddon>
@@ -79,9 +79,9 @@ export default function CustomRow() {
                 </Col>
                 <Col className={css.inputcolumn}>
                     <InputGroup className={css.inputgroup}>
-                        <Input placeholder="Break Even" type="number" />
+                        <Input placeholder="Break Even" type="number" disabled/>
                         <InputGroupAddon addonType="append">
-                        <InputGroupText>
+                        <InputGroupText className={css.iconcontainer}>
                             <i className="tim-icons icon-time-alarm" />
                         </InputGroupText>
                         </InputGroupAddon>

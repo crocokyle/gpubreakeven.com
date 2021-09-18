@@ -1,3 +1,9 @@
+.inputcard {
+    margin-bottom: 10px;
+    background-color: #344675;
+    color: white;
+}
+
 .inputgroup {
     margin-top: 10px;
 }
@@ -6,7 +12,7 @@
     padding-left: 25px;
     padding-right: 25px;
     display: grid;
-    grid-template-columns: 1fr 0.72fr 0.72fr 0.52fr 0.55fr;
+    grid-template-columns: 1fr 0.72fr 0.72fr 0.52fr 0.57fr;
 }
 
 .inputcolumn {
@@ -21,4 +27,8 @@
     display: block;
     background-position: center;
     background-size: cover;
+}
+
+.iconcontainer {
+    padding: 10px 10px 10px 10px !important;
 }
